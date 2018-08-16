@@ -1,0 +1,9 @@
+# Python
+*.py[cod]
+
+# Pycharm
+.idea/
+
+# Program
+run1/
+run2/

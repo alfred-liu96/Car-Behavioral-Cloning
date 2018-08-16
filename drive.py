@@ -15,6 +15,7 @@ from io import BytesIO
 from keras.models import load_model
 import h5py
 from keras import __version__ as keras_version
+from keras_applications import imagenet_utils
 
 sio = socketio.Server()
 app = Flask(__name__)
@@ -44,7 +45,7 @@ class SimplePIController:
 
 
 controller = SimplePIController(0.1, 0.002)
-set_speed = 9
+set_speed = 25
 controller.set_desired(set_speed)
 
 
@@ -119,7 +120,7 @@ if __name__ == '__main__':
         print('You are using Keras version ', keras_version,
               ', but the model was built using ', model_version)
 
-    model = load_model(args.model)
+    model = load_model(args.model, custom_objects={'imagenet_utils': imagenet_utils})
 
     if args.image_folder != '':
         print("Creating image folder at {}".format(args.image_folder))
