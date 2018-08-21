@@ -13,7 +13,7 @@ The goals / steps of this project are the following:
 
 [//]: # (Image References)
 
-[image1]: ./output/
+[image1]: ./output/smaller-inception.jpg
 [image2]: ./output/image1.jpg
 [image3]: ./output/image2.jpg
 [image4]: ./output/image3.jpg
@@ -67,7 +67,7 @@ Here is a visualization of the architecture.
 
 ![alt text][image1]
 
-#### 3. Creation of the Training Set & Training Process
+#### 3. Creation of the Training Set
 
 To capture good driving behavior, I first recorded two laps on both track one and track two. Here is an example image of center lane driving:
 
